@@ -19,7 +19,7 @@ public class Main {
              System.out.println("size="+myArrayList.getSize());
 
              System.out.println("element =" +myArrayList.get(2));
-             myArrayList.remove(18);
+             myArrayList.remove(1);
              System.out.print("removed ");
              for (int i = 0; i < myArrayList.getSize()-1; i++) {
                  System.out.print(myArrayList.get(i) +",");

@@ -3,19 +3,35 @@ package org.example;
 public class MyHashMapTest {
     public static void main(String args[]) {
         MyHashMap<String, String> mapContainer = new MyHashMap<>();
-        mapContainer.put("1", "one");
-        mapContainer.put("1", "two");
-        mapContainer.put("2", "three");
+        mapContainer.put("ab", "one");
+        mapContainer.put("222", "two");
+        mapContainer.put("12", "three");
         mapContainer.put("2", "four");
+        mapContainer.put("222bb", "five");
 
-        System.out.println(mapContainer.get("1"));
+
+        System.out.println(mapContainer.get("ab"));
+        System.out.println(mapContainer.get("222"));
+        System.out.println(mapContainer.get("12"));
         System.out.println(mapContainer.get("2"));
+        System.out.println(mapContainer.get("222bb"));
 
-//    put(Object key, Object value) додає пару ключ + значення
-//    remove(Object key) видаляє пару за ключем
-//    clear() очищає колекцію
-//    size() повертає розмір колекції
-//    get(Object key) повертає значення (Object value) за ключем
+        mapContainer.size();
+
+        mapContainer.remove("12");
+        System.out.println(mapContainer.get("ab"));
+        System.out.println(mapContainer.get("222"));
+        System.out.println(mapContainer.get("12"));
+        System.out.println(mapContainer.get("2"));
+        System.out.println(mapContainer.get("222bb"));
+        mapContainer.clear();
+        System.out.println("cleared");
+        System.out.println(mapContainer.get("ab"));
+        System.out.println(mapContainer.get("222"));
+        System.out.println(mapContainer.get("12"));
+        System.out.println(mapContainer.get("2"));
+        System.out.println(mapContainer.get("222bb"));
+
 
 
     }
